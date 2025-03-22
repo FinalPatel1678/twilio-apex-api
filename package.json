@@ -5,11 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "twilio-run",
-    "deploy": "twilio-run deploy"
+    "deploy": "twilio-run deploy --override-existing-project"
   },
   "dependencies": {
-    "@twilio/runtime-handler": "2.0.3",
-    "moment-timezone": "^0.5.47",
+    "@twilio/runtime-handler": "1.2.0",
+    "moment-timezone": "0.5.47",
     "twilio": "5.0.3"
   },
   "devDependencies": {

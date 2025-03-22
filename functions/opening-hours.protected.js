@@ -12,11 +12,11 @@ exports.handler = function (context, event, callback) {
     const endHour = 17;
 
     let response = {
-        inhours: false // Default to false (after hours)
+        inHours: false // Default to false (after hours)
     };
 
     if (currentHour >= startHour && currentHour < endHour) {
-        response.inhours = true; // 9 AM - 5 PM (Business hours)
+        response.inHours = true; // 9 AM - 5 PM (Business hours)
     }
 
     callback(null, response);
